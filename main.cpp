@@ -33,7 +33,7 @@ public:
 		Reset();
 		x += speed_x;
 		y += speed_y;
-		if (y >= GetScreenHeight() || y <= 0) 
+		if (y + radius >= GetScreenHeight() || y - radius <= 0) 
 		{
 			speed_y *= -1;
 		}
